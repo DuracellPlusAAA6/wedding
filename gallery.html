@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -31,15 +33,21 @@
             <!-- Gallery Grid -->
             <div class="gallery-grid">
                 <div class="gallery-item">
-                    <img src="assets/images/couple.jpg" alt="Bruno & Alexandra">
+                    <a href="assets/images/couple.jpg" data-lightbox="gallery" data-title="Our Engagement">
+                        <img src="assets/images/couple.jpg" alt="Bruno & Alexandra">
+                    </a>
                     <p>Our Engagement</p>
                 </div>
                 <div class="gallery-item">
-                    <img src="assets/images/venue.jpg" alt="Liria Events Venue">
+                    <a href="assets/images/venue-highres.jpg" data-lightbox="gallery" data-title="Liria Events Venue">
+                        <img src="assets/images/venue-highres.jpg" alt="Liria Events Venue">
+                    </a>
                     <p>Liria Events Venue</p>
                 </div>
                 <div class="gallery-item">
-                    <img src="assets/images/church.jpg" alt="Iași Catholic Church">
+                    <a href="assets/images/church-highres.jpg" data-lightbox="gallery" data-title="Iași Catholic Church">
+                        <img src="assets/images/church-highres.jpg" alt="Iași Catholic Church">
+                    </a>
                     <p>Iași Catholic Church</p>
                 </div>
                 <div class="gallery-item">
