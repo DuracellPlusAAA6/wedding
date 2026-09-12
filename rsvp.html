@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSVP | Bruno & Alexandra</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="info.html">Wedding Info</a></li>
+            <li><a href="plan.html">Schedule</a></li>
+            <li><a href="rsvp.html">RSVP</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <!-- RSVP Section -->
+    <section class="rsvp-section">
+        <div class="container">
+            <h1>RSVP</h1>
+            <p>Please let us know if you can join us by <strong>1 August 2027</strong>.</p>
+
+            <form id="rsvp-form" action="https://formsubmit.co/wedding@marquessilva.eu" method="POST">
+                <!-- Name -->
+                <div class="form-group">
+                    <label for="name">Your Name*</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <!-- Email or Phone (Optional) -->
+                <div class="form-group">
+                    <label for="email">Email (Optional)</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone (Optional)</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+
+                <!-- Attendance -->
+                <div class="form-group">
+                    <label>Will you be attending?*</label>
+                    <div class="radio-group">
+                        <input type="radio" id="attending-yes" name="attending" value="Yes" required>
+                        <label for="attending-yes">Yes, I will be there!</label>
+                        <input type="radio" id="attending-no" name="attending" value="No">
+                        <label for="attending-no">No, I can't make it.</label>
+                    </div>
+                </div>
+
+                <!-- Guest Count -->
+                <div class="form-group">
+                    <label for="guest-count">Number of Guests (Including You)*</label>
+                    <select id="guest-count" name="guest-count" onchange="addGuestFields()" required>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+
+                <!-- Dynamic Guest Names -->
+                <div class="form-group" id="guest-names"></div>
+
+                <!-- International Visit Package -->
+                <div class="form-group">
+                    <label>International Visit Package</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="package-wedding" name="package" value="Wedding Only">
+                        <label for="package-wedding">Wedding Only</label>
+                        <input type="checkbox" id="package-weekend" name="package" value="Weekend Package">
+                        <label for="package-weekend">Weekend Package</label>
+                        <input type="checkbox" id="package-week" name="package" value="Week Package">
+                        <label for="package-week">Week Package</label>
+                    </div>
+                </div>
+
+                <!-- Dietary Restrictions -->
+                <div class="form-group">
+                    <label for="dietary">Dietary Restrictions</label>
+                    <textarea id="dietary" name="dietary" placeholder="e.g., Vegan, Gluten-Free, Allergies"></textarea>
+                </div>
+
+                <!-- Song Requests -->
+                <div class="form-group">
+                    <label for="song">Song Requests (Optional)</label>
+                    <textarea id="song" name="song" placeholder="Your favorite song?"></textarea>
+                </div>
+
+                <!-- Submit -->
+                <button type="submit" class="cta-button">Submit RSVP</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2027 Bruno & Alexandra. All rights reserved.</p>
+            <p>Contact: <a href="mailto:wedding@marquessilva.eu">wedding@marquessilva.eu</a></p>
+            <div class="whatsapp-groups">
+                <p>Join our WhatsApp groups:</p>
+                <ul>
+                    <li><a href="#">Portuguese (Group A)</a></li>
+                    <li><a href="#">English (Group B)</a></li>
+                    <li><a href="#">Romanian (Group C)</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
