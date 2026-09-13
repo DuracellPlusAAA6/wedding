@@ -100,7 +100,7 @@
 
                 <!-- Transport -->
                 <div class="form-group">
-                    <label>Do you need transport from the church to the venue?*</label>
+                    <label>Do you need transport to the church and from the venue? If so, select your departure location so we can arrange buses.*</label>
                     <div class="checkbox-group">
                         <input type="checkbox" id="transport-iasi" name="transport" value="Iași">
                         <label for="transport-iasi">Iași</label>
@@ -108,6 +108,19 @@
                         <label for="transport-tamaseni">Tamașeni</label>
                         <input type="checkbox" id="transport-roman" name="transport" value="Roman">
                         <label for="transport-roman">Roman</label>
+                    </div>
+                </div>
+
+                <!-- Hotel -->
+                <div class="form-group">
+                    <label>Do you need a hotel?*</label>
+                    <div class="radio-group">
+                        <input type="radio" id="hotel-none" name="hotel" value="No hotel" required>
+                        <label for="hotel-none">No hotel</label>
+                        <input type="radio" id="hotel-before" name="hotel" value="Hotel the night before">
+                        <label for="hotel-before">Hotel the night before</label>
+                        <input type="radio" id="hotel-before-after" name="hotel" value="Hotel the night before and after">
+                        <label for="hotel-before-after">Hotel the night before and after</label>
                     </div>
                 </div>
 
