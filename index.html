@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Bruno & Alexandra | Wedding 2027</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +23,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero" style="background-image: url('assets/images/Nunta-in-aer-liber-Liria-events-Lacul-Aroneanu-cort-nunti-cort-evenimente-nunta-la-cort-botez-iasi-corporate-1-400x300.png');">
+    <header class="hero" style="background-image: url('assets/images/optimized/Nunta-in-aer-liber-Liria-events-Lacul-Aroneanu-cort-nunti-cort-evenimente-nunta-la-cort-botez-iasi-corporate-1-400x300_optimized.jpg');">
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <h1>Bruno & Alexandra</h1>
@@ -36,7 +36,7 @@
     <!-- Couple Introduction -->
     <section class="couple-intro">
         <div class="container">
-            <img src="assets/images/signal-2026-06-13-10-01-01-532.jpg" alt="Bruno & Alexandra" class="couple-photo">
+            <img src="assets/images/optimized/signal-2026-06-13-10-01-01-532_optimized.jpg" alt="Bruno & Alexandra" class="couple-photo" loading="lazy">
             <h2>Our Story</h2>
             <p>Bruno is from Portugal, and Alexandra is from Romania. They now live together in France and are excited to celebrate their wedding in Iași, where their love story began.</p>
         </div>
@@ -47,13 +47,13 @@
         <div class="container">
             <div class="venue-grid">
                 <div class="venue-item">
-                    <img src="assets/images/Nunta-in-aer-liber-Liria-events-Lacul-Aroneanu-cort-nunti-cort-evenimente-nunta-la-cort-botez-iasi-corporate-1-400x300.png" alt="Liria Events Venue">
+                    <img src="assets/images/optimized/Nunta-in-aer-liber-Liria-events-Lacul-Aroneanu-cort-nunti-cort-evenimente-nunta-la-cort-botez-iasi-corporate-1-400x300_optimized.jpg" alt="Liria Events Venue" loading="lazy">
                     <h3>Liria Events Venue</h3>
                     <p>Our reception will take place at this stunning lakeside venue in Iași.</p>
                     <a href="https://liria-events.ro/evenimente/" target="_blank">Learn More</a>
                 </div>
                 <div class="venue-item">
-                    <img src="assets/images/OIP.lV_zTfnOXEo41hYd6vYyqgHaET.jpg" alt="Iași Catholic Church">
+                    <img src="assets/images/optimized/OIP.lV_zTfnOXEo41hYd6vYyqgHaET_optimized.jpg" alt="Iași Catholic Church" loading="lazy">
                     <h3>Iași Catholic Church</h3>
                     <p>The ceremony will be held at this historic and beautiful church in Iași.</p>
                     <a href="https://ercis.ro/" target="_blank">Learn More</a>
@@ -78,6 +78,18 @@
         </div>
     </footer>
 
+    <!-- Mobile Navigation Toggle -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navbarMobile = document.querySelector('.navbar-mobile');
+            const navbarUl = document.querySelector('.navbar ul');
+            
+            navbarMobile.addEventListener('click', function() {
+                navbarUl.classList.toggle('active');
+            });
+        });
+    </script>
+    
     <!-- JavaScript -->
     <script src="assets/js/script.js"></script>
 </body>
