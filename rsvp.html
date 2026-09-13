@@ -12,6 +12,11 @@
 <body>
     <!-- Navigation -->
     <nav class="navbar">
+        <div class="navbar-mobile">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="info.html">Wedding Info</a></li>
@@ -19,6 +24,8 @@
             <li><a href="rsvp.html">RSVP</a></li>
             <li><a href="news.html">News</a></li>
             <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="international.html">International Guests</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
@@ -26,7 +33,7 @@
     <section class="rsvp-section">
         <div class="container">
             <h1>RSVP</h1>
-            <p>Please let us know if you can join us by <strong>1 August 2027</strong>.</p>
+            <p>Please let us know if you can join us by <strong>1 March 2027</strong>.</p>
 
             <form id="rsvp-form" action="https://formsubmit.co/wedding@marquessilva.eu" method="POST">
                 <!-- Name -->
@@ -91,6 +98,19 @@
                     <textarea id="dietary" name="dietary" placeholder="e.g., Vegan, Gluten-Free, Allergies"></textarea>
                 </div>
 
+                <!-- Transport -->
+                <div class="form-group">
+                    <label>Do you need transport from the church to the venue?*</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="transport-iasi" name="transport" value="Iași">
+                        <label for="transport-iasi">Iași</label>
+                        <input type="checkbox" id="transport-tamaseni" name="transport" value="Tamașeni">
+                        <label for="transport-tamaseni">Tamașeni</label>
+                        <input type="checkbox" id="transport-roman" name="transport" value="Roman">
+                        <label for="transport-roman">Roman</label>
+                    </div>
+                </div>
+
                 <!-- Song Requests -->
                 <div class="form-group">
                     <label for="song">Song Requests (Optional)</label>
@@ -103,6 +123,11 @@
         </div>
     </section>
 
+    <!-- Next Page Button -->
+    <div style="text-align: center; margin: 40px 0;">
+        <a href="news.html" class="cta-button">Next: News →</a>
+    </div>
+    
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -121,5 +146,17 @@
 
     <!-- JavaScript -->
     <script src="assets/js/script.js"></script>
+    
+    <!-- Mobile Navigation Toggle -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navbarMobile = document.querySelector('.navbar-mobile');
+            const navbarUl = document.querySelector('.navbar ul');
+            
+            navbarMobile.addEventListener('click', function() {
+                navbarUl.classList.toggle('active');
+            });
+        });
+    </script>
 </body>
 </html>

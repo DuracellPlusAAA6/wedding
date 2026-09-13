@@ -14,6 +14,11 @@
 <body>
     <!-- Navigation -->
     <nav class="navbar">
+        <div class="navbar-mobile">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="info.html">Wedding Info</a></li>
@@ -21,6 +26,8 @@
             <li><a href="rsvp.html">RSVP</a></li>
             <li><a href="news.html">News</a></li>
             <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="international.html">International Guests</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
@@ -66,6 +73,11 @@
         </div>
     </section>
 
+    <!-- Next Page Button -->
+    <div style="text-align: center; margin: 40px 0;">
+        <a href="international.html" class="cta-button">Next: International Guests →</a>
+    </div>
+    
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -81,5 +93,17 @@
             </div>
         </div>
     </footer>
+    
+    <!-- Mobile Navigation Toggle -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navbarMobile = document.querySelector('.navbar-mobile');
+            const navbarUl = document.querySelector('.navbar ul');
+            
+            navbarMobile.addEventListener('click', function() {
+                navbarUl.classList.toggle('active');
+            });
+        });
+    </script>
 </body>
 </html>
