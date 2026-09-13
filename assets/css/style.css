@@ -1,18 +1,35 @@
-/* Language Flags */
-.language-flags {
+/* Navbar Fix */
+.navbar {
     position: fixed;
-    top: 10px;
-    right: 10px;
-    z-index: 1001;
-    display: flex;
-    gap: 5px;
-    background: rgba(255, 255, 255, 0.8);
-    padding: 5px;
-    border-radius: 5px;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.language-flags img {
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.navbar li {
+    margin: 0 10px;
+}
+
+/* Language Flags in Navbar */
+.navbar .language-flags {
+    display: flex;
+    gap: 5px;
+    margin-left: auto;
+}
+
+.navbar .language-flags img {
     width: 24px;
     height: 16px;
     border-radius: 2px;
@@ -504,6 +521,29 @@ body {
 .faq-item h3 {
     font-family: 'Playfair Display', serif;
     margin-bottom: 5px;
+}
+
+/* Team Section */
+.team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.team-card {
+    flex: 1;
+    max-width: 300px;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.team-card h2 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 10px;
 }
 
 /* Footer */

@@ -10,13 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Language Flags -->
-    <div class="language-flags">
-        <a href="#pt"><img src="assets/images/flag_pt.png" alt="Português" title="Português"></a>
-        <a href="#en"><img src="assets/images/flag_en.png" alt="English" title="English"></a>
-        <a href="#ro"><img src="assets/images/flag_ro.png" alt="Română" title="Română"></a>
-    </div>
-    
     <!-- Navigation -->
     <nav class="navbar">
         <div class="navbar-mobile">
@@ -25,6 +18,11 @@
             <span></span>
         </div>
         <ul>
+            <div class="language-flags">
+                <a href="#pt"><img src="assets/images/flag_pt.png" alt="Português" title="Português"></a>
+                <a href="#en"><img src="assets/images/flag_en.png" alt="English" title="English"></a>
+                <a href="#ro"><img src="assets/images/flag_ro.png" alt="Română" title="Română"></a>
+            </div>
             <li><a href="index.html">Home</a></li>
             <li><a href="info.html">Wedding</a></li>
             <li><a href="plan.html">Schedule</a></li>
@@ -108,16 +106,33 @@
                     <textarea id="dietary" name="dietary" placeholder="e.g., Vegan, Gluten-Free, Allergies"></textarea>
                 </div>
 
+                <!-- International Guests Package -->
+                <div class="form-group">
+                    <label>International Guests Package*</label>
+                    <div class="radio-group">
+                        <input type="radio" id="package-none" name="package" value="No package" required>
+                        <label for="package-none">No package</label>
+                        <input type="radio" id="package-weekend" name="package" value="Weekend Package">
+                        <label for="package-weekend">Weekend Package (150€)</label>
+                        <input type="radio" id="package-week" name="package" value="Week Package">
+                        <label for="package-week">Week Package (500€)</label>
+                    </div>
+                </div>
+
                 <!-- Transport -->
                 <div class="form-group">
-                    <label>Do you need transport to the church and from the venue? If so, select your departure location so we can arrange buses.*</label>
-                    <div class="checkbox-group">
-                        <input type="checkbox" id="transport-iasi" name="transport" value="Iași">
+                    <label>Do you need transport to the church and from the venue?*</label>
+                    <div class="radio-group">
+                        <input type="radio" id="transport-none" name="transport" value="No transport" required>
+                        <label for="transport-none">No transport</label>
+                        <input type="radio" id="transport-iasi" name="transport" value="Iași">
                         <label for="transport-iasi">Iași</label>
-                        <input type="checkbox" id="transport-tamaseni" name="transport" value="Tamașeni">
+                        <input type="radio" id="transport-tamaseni" name="transport" value="Tamașeni">
                         <label for="transport-tamaseni">Tamașeni</label>
-                        <input type="checkbox" id="transport-roman" name="transport" value="Roman">
+                        <input type="radio" id="transport-roman" name="transport" value="Roman">
                         <label for="transport-roman">Roman</label>
+                        <input type="radio" id="transport-package" name="transport" value="Weekend Package Chosen">
+                        <label for="transport-package">Weekend Package Chosen</label>
                     </div>
                 </div>
 
@@ -131,6 +146,8 @@
                         <label for="hotel-before">Hotel the night before</label>
                         <input type="radio" id="hotel-before-after" name="hotel" value="Hotel the night before and after">
                         <label for="hotel-before-after">Hotel the night before and after</label>
+                        <input type="radio" id="hotel-package" name="hotel" value="Weekend Package Chosen">
+                        <label for="hotel-package">Weekend Package Chosen</label>
                     </div>
                 </div>
 
