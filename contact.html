@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Contact | Bruno & Alexandra</title>
+    <title>Contact | Alexandra & Bruno</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,17 +12,17 @@
 <body>
     <!-- Navigation -->
     <nav class="navbar">
+        <div class="language-flags-desktop">
+            <a href="#pt"><img src="assets/images/flag_pt.png" alt="Português" title="Português"></a>
+            <a href="#en"><img src="assets/images/flag_en.png" alt="English" title="English"></a>
+            <a href="#ro"><img src="assets/images/flag_ro.png" alt="Română" title="Română"></a>
+        </div>
         <div class="navbar-mobile">
             <span></span>
             <span></span>
             <span></span>
         </div>
         <ul>
-            <div class="language-flags">
-                <a href="#pt"><img src="assets/images/flag_pt.png" alt="Português" title="Português"></a>
-                <a href="#en"><img src="assets/images/flag_en.png" alt="English" title="English"></a>
-                <a href="#ro"><img src="assets/images/flag_ro.png" alt="Română" title="Română"></a>
-            </div>
             <li><a href="index.html">Home</a></li>
             <li><a href="info.html">Wedding</a></li>
             <li><a href="plan.html">Schedule</a></li>
@@ -70,7 +70,7 @@
             <p>Here’s who to contact for what!</p>
             
             <div class="team-grid">
-                <div class="team-card">
+                <div class="team-card" id="bruno-alexandra-card">
                     <h2>Bruno & Alexandra</h2>
                     <p><strong>Responsibilities:</strong> Overall coordination, guest confirmations, and general Q&A.</p>
                 </div>
@@ -93,7 +93,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2027 Bruno & Alexandra. All rights reserved.</p>
+            <p>&copy; 2027 Alexandra & Bruno. All rights reserved.</p>
             <p>Contact: <a href="mailto:wedding@marquessilva.eu">wedding@marquessilva.eu</a></p>
             <div class="whatsapp-groups">
                 <p>Join our WhatsApp groups:</p>
@@ -108,6 +108,14 @@
 
     <!-- Mobile Navigation Toggle -->
     <script>
+        // Update Bruno & Alexandra to Alexandra & Bruno in the team section
+        document.addEventListener('DOMContentLoaded', function() {
+            const card = document.getElementById('bruno-alexandra-card');
+            if (card) {
+                card.querySelector('h2').textContent = 'Alexandra & Bruno';
+            }
+        });
+
         document.addEventListener('DOMContentLoaded', function() {
             const navbarMobile = document.querySelector('.navbar-mobile');
             const navbarUl = document.querySelector('.navbar ul');

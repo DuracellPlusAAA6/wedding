@@ -23,17 +23,33 @@
 }
 
 /* Language Flags in Navbar */
-.navbar .language-flags {
+.navbar .language-flags,
+.navbar .language-flags-desktop {
     display: flex;
     gap: 5px;
     margin-left: auto;
 }
 
-.navbar .language-flags img {
+.navbar .language-flags img,
+.navbar .language-flags-desktop img {
     width: 24px;
     height: 16px;
     border-radius: 2px;
     cursor: pointer;
+}
+
+/* Desktop Flags (Right Side) */
+.language-flags-desktop {
+    position: absolute;
+    top: 15px;
+    right: 60px;
+    z-index: 1001;
+}
+
+@media (max-width: 768px) {
+    .language-flags-desktop {
+        display: none;
+    }
 }
 
 /* Global Styles */
