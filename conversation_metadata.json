@@ -1,0 +1,16 @@
+{
+  "chat_metadata": {
+    "chat_id": "+351961073277",
+    "message_id": "1789378223388",
+    "sender_id": "+351961073277",
+    "sender": "Bruno Silva",
+    "timestamp": "Mon 2026-09-14 11:30:23 GMT+2",
+    "inbound_event_kind": "user_request"
+  },
+  "sender_metadata": {
+    "label": "Bruno Silva (+351961073277)",
+    "id": "+351961073277",
+    "name": "Bruno Silva"
+  },
+  "notes": "This file contains metadata for the conversation related to the wedding website development. It is stored for reference and audit purposes."
+}
