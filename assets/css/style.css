@@ -26,16 +26,18 @@
 .navbar .language-flags,
 .navbar .language-flags-desktop {
     display: flex;
-    gap: 5px;
+    gap: 8px;
     margin-left: auto;
+    align-items: center;
 }
 
 .navbar .language-flags img,
 .navbar .language-flags-desktop img {
     width: 24px;
-    height: 16px;
-    border-radius: 2px;
+    height: auto;
     cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
 }
 
 /* Desktop Flags (Right Side) */
