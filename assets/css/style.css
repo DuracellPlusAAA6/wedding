@@ -531,6 +531,22 @@ body {
     font-weight: 700;
 }
 
+/* Venue Gallery */
+.venue-gallery {
+    background-color: #fff;
+}
+
+.venue-gallery h1 {
+    margin-bottom: 10px;
+}
+
+.venue-credit {
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #666;
+    text-align: center;
+}
+
 /* Info Page */
 .info-section {
     margin-bottom: 40px;
