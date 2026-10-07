@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Us | Alexandra & Bruno</title>
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="language-flags-desktop">
+            <a href="#pt"><img src="https://flagicons.lipis.dev/flags/4x3/pt.svg" alt="Português" title="Português"></a>
+            <a href="#en"><img src="https://flagicons.lipis.dev/flags/4x3/gb.svg" alt="English" title="English"></a>
+            <a href="#ro"><img src="https://flagicons.lipis.dev/flags/4x3/ro.svg" alt="Română" title="Română"></a>
+        </div>
+        <div class="navbar-mobile">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../info.html">Wedding</a></li>
+            <li><a href="../../plan.html">Schedule</a></li>
+            <li><a href="../../rsvp.html">RSVP</a></li>
+            <li><a href="../../news.html">News</a></li>
+            <li><a href="../../gallery.html">Gallery</a></li>
+            <li><a href="../../international.html">International Guests</a></li>
+            <li><a href="../../contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Spacer to prevent navbar overlap -->
+    <div style="height: 80px;"></div>
+    <!-- Us Album -->
+    <section class="gallery venue-gallery">
+        <div class="container">
+            <h1>Us — Alexandra & Bruno</h1>
+            <p><strong>10 September 2027 | Iași, Romania</strong></p>
+            <p>Bruno is from Portugal, and Alexandra is from Romania. We now live together in France, and we are excited to celebrate our wedding in Iași, where our love story began.</p>
+            <p>A Romanian wedding with Portuguese delights and European-friendly culture — a blend of traditions, delicious food, and a warm atmosphere where everyone feels at home.</p>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <a href="../../assets/images/optimized/signal-2026-06-13-10-01-01-532_optimized.jpg" data-lightbox="us" data-title="Alexandra & Bruno">
+                        <img src="../../assets/images/optimized/signal-2026-06-13-10-01-01-532_optimized.jpg" alt="Alexandra and Bruno together" loading="lazy">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Back to Gallery -->
+    <div style="text-align: center; margin: 40px 0;">
+        <a href="../../gallery.html" class="cta-button">← Back to Gallery</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2027 Alexandra & Bruno. All rights reserved.</p>
+            <p>Contact: <a href="mailto:wedding@marquessilva.eu">wedding@marquessilva.eu</a></p>
+            <div class="whatsapp-groups">
+                <p>Join our WhatsApp groups:</p>
+                <ul>
+                    <li><a href="#">Portuguese (Group A)</a></li>
+                    <li><a href="#">English (Group B)</a></li>
+                    <li><a href="#">Romanian (Group C)</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- Lightbox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+    <!-- Mobile Navigation Toggle -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navbarMobile = document.querySelector('.navbar-mobile');
+            const navbarUl = document.querySelector('.navbar ul');
+
+            navbarMobile.addEventListener('click', function() {
+                navbarUl.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>

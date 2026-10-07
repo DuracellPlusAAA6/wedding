@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel | Alexandra & Bruno</title>
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="language-flags-desktop">
+            <a href="#pt"><img src="https://flagicons.lipis.dev/flags/4x3/pt.svg" alt="Português" title="Português"></a>
+            <a href="#en"><img src="https://flagicons.lipis.dev/flags/4x3/gb.svg" alt="English" title="English"></a>
+            <a href="#ro"><img src="https://flagicons.lipis.dev/flags/4x3/ro.svg" alt="Română" title="Română"></a>
+        </div>
+        <div class="navbar-mobile">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../info.html">Wedding</a></li>
+            <li><a href="../../plan.html">Schedule</a></li>
+            <li><a href="../../rsvp.html">RSVP</a></li>
+            <li><a href="../../news.html">News</a></li>
+            <li><a href="../../gallery.html">Gallery</a></li>
+            <li><a href="../../international.html">International Guests</a></li>
+            <li><a href="../../contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Spacer to prevent navbar overlap -->
+    <div style="height: 80px;"></div>
+    <!-- Hotel Album -->
+    <section class="gallery venue-gallery">
+        <div class="container">
+            <h1>Hotel Traian</h1>
+            <p>Photos coming soon. In the meantime, here is everything you need for your stay.</p>
+
+            <div class="info-section">
+                <h2>Details</h2>
+                <ul>
+                    <li><strong>Price:</strong> 70€ per night, breakfast included.</li>
+                    <li><strong>Address:</strong> Strada Cuza Vodă 1, Iași 700259.</li>
+                    <li><strong>Booking:</strong> Reserve via email at <a href="mailto:wedding@marquessilva.eu">wedding@marquessilva.eu</a> or through our WhatsApp groups.</li>
+                </ul>
+                <p><a href="https://www.google.com/maps/place/Hotel+Traian" target="_blank">View on Google Maps</a></p>
+            </div>
+        </div>
+    </section>
+    <!-- Back to Gallery -->
+    <div style="text-align: center; margin: 40px 0;">
+        <a href="../../gallery.html" class="cta-button">← Back to Gallery</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2027 Alexandra & Bruno. All rights reserved.</p>
+            <p>Contact: <a href="mailto:wedding@marquessilva.eu">wedding@marquessilva.eu</a></p>
+            <div class="whatsapp-groups">
+                <p>Join our WhatsApp groups:</p>
+                <ul>
+                    <li><a href="#">Portuguese (Group A)</a></li>
+                    <li><a href="#">English (Group B)</a></li>
+                    <li><a href="#">Romanian (Group C)</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- Mobile Navigation Toggle -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navbarMobile = document.querySelector('.navbar-mobile');
+            const navbarUl = document.querySelector('.navbar ul');
+
+            navbarMobile.addEventListener('click', function() {
+                navbarUl.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>

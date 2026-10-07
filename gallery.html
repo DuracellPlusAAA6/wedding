@@ -8,8 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Lightbox CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -35,81 +33,44 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    
+
     <!-- Spacer to prevent navbar overlap -->
     <div style="height: 80px;"></div>
 
-    <!-- Gallery Section -->
+    <!-- Albums -->
     <section class="gallery">
         <div class="container">
             <h1>Gallery</h1>
-            <p>Sneak peeks from our journey and wedding planning!</p>
+            <p>Explore our world through albums — us, the places we love, and the plans for the big day. Open an album to see more.</p>
 
-            <!-- Gallery Grid -->
-            <div class="gallery-grid">
-                <!-- 1. Alexandra & Bruno -->
-                <div class="gallery-item">
-                    <a href="assets/images/optimized/signal-2026-06-13-10-01-01-532_optimized.jpg" data-lightbox="gallery" data-title="Alexandra & Bruno">
-                        <img src="assets/images/optimized/signal-2026-06-13-10-01-01-532_optimized.jpg" alt="Alexandra & Bruno" loading="lazy">
-                    </a>
-                    <p>Alexandra & Bruno</p>
-                </div>
-                
-                <!-- 2. Iași Catholic Church -->
-                <div class="gallery-item">
-                    <a href="assets/images/optimized/OIP.lV_zTfnOXEo41hYd6vYyqgHaET_optimized.jpg" data-lightbox="gallery" data-title="Iași Catholic Church">
-                        <img src="assets/images/optimized/OIP.lV_zTfnOXEo41hYd6vYyqgHaET_optimized.jpg" alt="Iași Catholic Church" loading="lazy">
-                    </a>
-                    <p>Iași Catholic Church</p>
-                </div>
-                
-                <!-- 3. Venue -->
-                <div class="gallery-item">
-                    <a href="gallery/venue/" title="View all venue photos">
-                        <img src="assets/images/venue/venue_01.jpg" alt="Chalette Events venue" loading="lazy">
-                    </a>
-                    <p>Venue - Chalette Events (Album)</p>
-                </div>
-                
-                <!-- 4. Iași -->
-                <div class="gallery-item">
-                    <a href="assets/images/iasi_palace_of_culture.jpg" data-lightbox="gallery" data-title="Palace of Culture, Iași">
-                        <img src="assets/images/iasi_palace_of_culture.jpg" alt="Palace of Culture" loading="lazy">
-                    </a>
-                    <p>Iași</p>
-                </div>
-                
-                <!-- 5. Hotel -->
-                <div class="gallery-item">
-                    <a href="assets/images/hotel_traian.jpg" data-lightbox="gallery" data-title="Hotel Traian">
-                        <img src="assets/images/hotel_traian.jpg" alt="Hotel Traian" loading="lazy">
-                    </a>
-                    <p>Hotel</p>
-                </div>
-                
-                <!-- 6. Team -->
-                <div class="gallery-item">
-                    <a href="assets/images/team_group.jpg" data-lightbox="gallery" data-title="Wedding Team">
-                        <img src="assets/images/team_group.jpg" alt="Wedding Team" loading="lazy">
-                    </a>
-                    <p>Team</p>
-                </div>
-                
-                <!-- 7. Weekend Package -->
-                <div class="gallery-item">
-                    <a href="assets/images/weekend_package.jpg" data-lightbox="gallery" data-title="Weekend Package">
-                        <img src="assets/images/weekend_package.jpg" alt="Weekend Package" loading="lazy">
-                    </a>
-                    <p>Weekend Package</p>
-                </div>
-                
-                <!-- 8. Week Package -->
-                <div class="gallery-item">
-                    <a href="assets/images/week_package.jpg" data-lightbox="gallery" data-title="Week Package">
-                        <img src="assets/images/week_package.jpg" alt="Week Package" loading="lazy">
-                    </a>
-                    <p>Week Package</p>
-                </div>
+            <div class="album-grid">
+                <a href="gallery/us/" class="album-card">
+                    <img src="assets/images/optimized/signal-2026-06-13-10-01-01-532_optimized.jpg" alt="Alexandra and Bruno" loading="lazy">
+                    <h2>Us</h2>
+                    <p>Alexandra & Bruno — from Portugal and Romania to a wedding in Iași, where our story continues on 10 September 2027.</p>
+                </a>
+                <a href="gallery/church/" class="album-card">
+                    <img src="assets/images/optimized/OIP.lV_zTfnOXEo41hYd6vYyqgHaET_optimized.jpg" alt="Iași Catholic Church" loading="lazy">
+                    <h2>Church</h2>
+                    <p>The Iași Catholic Church — a historic gem in the city center, where our ceremony begins at 4:00 PM.</p>
+                </a>
+                <a href="gallery/venue/" class="album-card">
+                    <img src="assets/images/venue/venue_01.jpg" alt="Chalette Events venue" loading="lazy">
+                    <h2>Venue</h2>
+                    <p>Chalette Events — the Glass Garden in the forest near Iași, our reception home for the evening.</p>
+                </a>
+                <a href="gallery/iasi/" class="album-card">
+                    <h2>Iași</h2>
+                    <p>Palace of Culture, Golia Monastery, the Botanical Garden — a city worth a weekend of exploring.</p>
+                </a>
+                <a href="gallery/hotel/" class="album-card">
+                    <h2>Hotel</h2>
+                    <p>Hotel Traian — our guests' home in the city center, with a special rate of 70€ per night, breakfast included.</p>
+                </a>
+                <a href="gallery/international/" class="album-card">
+                    <h2>International Package</h2>
+                    <p>Weekend (150€) and Week (500€) packages — transfers, tours, brunches, and a road trip through Transylvania.</p>
+                </a>
             </div>
         </div>
     </section>
@@ -118,7 +79,7 @@
     <div style="text-align: center; margin: 40px 0;">
         <a href="international.html" class="cta-button">Next: International Guests →</a>
     </div>
-    
+
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -134,17 +95,13 @@
             </div>
         </div>
     </footer>
-    
-    <!-- Lightbox JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 
     <!-- Mobile Navigation Toggle -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const navbarMobile = document.querySelector('.navbar-mobile');
             const navbarUl = document.querySelector('.navbar ul');
-            
+
             navbarMobile.addEventListener('click', function() {
                 navbarUl.classList.toggle('active');
             });
