@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -40,7 +42,42 @@
     <section class="gallery venue-gallery">
         <div class="container">
             <h1>Iași — Our Wedding City</h1>
-            <p>Photos coming soon. In the meantime, here is what awaits you in Iași, the city where our story begins.</p>
+            <p>Welcome to Iași, the city where our story begins. Here is what awaits you when you visit.</p>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <a href="../../assets/images/iasi/iasi_01.jpg" data-lightbox="iasi" data-title="Palace of Culture — aerial view">
+                        <img src="../../assets/images/iasi/iasi_01.jpg" alt="Aerial view of the Palace of Culture in Iasi" loading="lazy">
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="../../assets/images/iasi/iasi_02.jpg" data-lightbox="iasi" data-title="Golia Monastery">
+                        <img src="../../assets/images/iasi/iasi_02.jpg" alt="Golia Monastery church in Iasi" loading="lazy">
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="../../assets/images/iasi/iasi_03.jpg" data-lightbox="iasi" data-title="Botanical Garden">
+                        <img src="../../assets/images/iasi/iasi_03.jpg" alt="The Botanical Garden of Iasi" loading="lazy">
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="../../assets/images/iasi/iasi_04.jpg" data-lightbox="iasi" data-title="Union Square (Piața Unirii)">
+                        <img src="../../assets/images/iasi/iasi_04.jpg" alt="Union Square in Iasi" loading="lazy">
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="../../assets/images/iasi/iasi_05.jpg" data-lightbox="iasi" data-title="Metropolitan Orthodox Cathedral">
+                        <img src="../../assets/images/iasi/iasi_05.jpg" alt="Metropolitan Orthodox Cathedral of Iasi" loading="lazy">
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="../../assets/images/iasi/iasi_06.jpg" data-lightbox="iasi" data-title="Copou">
+                        <img src="../../assets/images/iasi/iasi_06.jpg" alt="Copou quarter of Iasi" loading="lazy">
+                    </a>
+                </div>
+            </div>
+
+            <p class="venue-credit">Photos via Wikimedia Commons (free licenses): <a href="https://commons.wikimedia.org/wiki/File:Palatul_Culturii_Iasi_-_Aerial.jpg" target="_blank" rel="noopener">Palace of Culture</a> · <a href="https://commons.wikimedia.org/wiki/File:Golia_Monastery_Church_%2C_Ia%C5%9Fi_3.JPG" target="_blank" rel="noopener">Golia Monastery</a> · <a href="https://commons.wikimedia.org/wiki/File:Ia%C5%9Fi_%2C_Gr%C4%83dina_Botanic%C4%83_16.JPG" target="_blank" rel="noopener">Botanical Garden</a> · <a href="https://commons.wikimedia.org/wiki/File:Piata_Unirii%2C_Iasi%2C_decembrie_2013_-_panoramio_%284%29.jpg" target="_blank" rel="noopener">Union Square</a> · <a href="https://commons.wikimedia.org/wiki/File:RO%2C_IS%2C_Iasi%2C_Metropolitan_Orthodox_Cathedral_4.JPG" target="_blank" rel="noopener">Metropolitan Cathedral</a> · <a href="https://commons.wikimedia.org/wiki/File:Copou%2C_Ia%C8%99i%2C_Romania_-_panoramio_%281%29.jpg" target="_blank" rel="noopener">Copou</a></p>
 
             <div class="info-section">
                 <h2>What to Explore</h2>
@@ -83,6 +120,10 @@
             </div>
         </div>
     </footer>
+    <!-- Lightbox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
     <!-- Mobile Navigation Toggle -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
