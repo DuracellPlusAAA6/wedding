@@ -40,13 +40,13 @@
     border-radius: 2px;
 }
 
-/* Desktop Flags (Right Side) */
+/* Desktop Flags (hidden: site is English-only for now) */
 .language-flags-desktop {
     position: absolute;
     top: 15px;
     right: 60px;
     z-index: 1001;
-    display: flex !important;
+    display: none !important;
     gap: 8px !important;
 }
 
@@ -55,14 +55,6 @@
     height: auto !important;
     border: 1px solid rgba(0, 0, 0, 0.1) !important;
     border-radius: 2px !important;
-}
-
-@media (max-width: 768px) {
-    .language-flags-desktop {
-        display: flex !important;
-        top: 16px;
-        right: 70px;
-    }
 }
 
 /* Global Styles */
