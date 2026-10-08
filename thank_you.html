@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Alexandra & Bruno | Wedding 2027</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | Alexandra & Bruno</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,54 +33,23 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    
+
     <!-- Spacer to prevent navbar overlap -->
     <div style="height: 80px;"></div>
 
-    <!-- Hero Section -->
-    <header class="hero" style="background-image: url('assets/images/venue/venue_05.jpg');">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1>Alexandra & Bruno</h1>
-            <p>10 September 2027 | Iași, Romania</p>
-            <div class="countdown" id="countdown"></div>
-            <a href="rsvp.html" class="cta-button">RSVP Now</a>
-        </div>
-    </header>
+    <!-- Thank You Section -->
+    <section class="gallery venue-gallery">
+        <div class="container" style="text-align: center; max-width: 700px;">
+            <h1>Thank You!</h1>
+            <p style="font-size: 1.2rem;">Thank you for your answer — your RSVP has been sent. We can't wait to celebrate with you in Iași on <strong>10 September 2027</strong>!</p>
+            <p style="font-size: 1.2rem;">Need to change something later? Just reach out at <a href="mailto:wedding@marquessilva.eu">wedding@marquessilva.eu</a>.</p>
 
-    <!-- Couple Introduction -->
-    <section class="couple-intro">
-        <div class="container">
-            <img src="assets/images/optimized/signal-2026-06-13-10-01-01-532_optimized.jpg" alt="Alexandra & Bruno" class="couple-photo" loading="lazy">
-            <h2>Our Story</h2>
-            <p>Bruno is from Portugal, and Alexandra is from Romania. They now live together in France and are excited to celebrate their wedding in Iași, where their love story began.</p>
-            <p><strong>A Romanian wedding with Portuguese delights, European-friendly culture!</strong> Expect a blend of traditions, delicious food, and a warm, inclusive atmosphere where everyone feels at home. We can’t wait to celebrate with you!</p>
-        </div>
-    </section>
-
-    <!-- Venue & Church -->
-    <section class="venue-church">
-        <div class="container">
-            <div class="venue-grid">
-                <div class="venue-item">
-                    <img src="assets/images/church/church_01.jpg" alt="Iași Catholic Church" loading="lazy">
-                    <h3>Iași Catholic Church</h3>
-                    <p>The ceremony will be held at this historic and beautiful church in Iași.</p>
-                </div>
-                <div class="venue-item">
-                    <img src="assets/images/venue/venue_08.webp" alt="Chalette Events venue in the forest" loading="lazy">
-                    <h3>Chalette Events Venue</h3>
-                    <p>Our reception will take place at this magical forest venue near Iași.</p>
-                </div>
+            <div style="margin-top: 40px;">
+                <a href="index.html" class="cta-button">← Back to Home</a>
             </div>
         </div>
     </section>
 
-    <!-- Wedding Info Button -->
-    <div style="text-align: center; margin: 40px 0;">
-        <a href="info.html" class="cta-button">Go to Wedding Info</a>
-    </div>
-    
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -102,14 +71,11 @@
         document.addEventListener('DOMContentLoaded', function() {
             const navbarMobile = document.querySelector('.navbar-mobile');
             const navbarUl = document.querySelector('.navbar ul');
-            
+
             navbarMobile.addEventListener('click', function() {
                 navbarUl.classList.toggle('active');
             });
         });
     </script>
-    
-    <!-- JavaScript -->
-    <script src="assets/js/script.js"></script>
 </body>
 </html>
