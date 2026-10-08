@@ -1,5 +1,8 @@
 // Countdown Timer
 function updateCountdown() {
+    const countdownElement = document.getElementById("countdown");
+    if (!countdownElement) return;
+
     const weddingDate = new Date("September 10, 2027 13:00:00").getTime();
     const now = new Date().getTime();
     const distance = weddingDate - now;
@@ -9,7 +12,7 @@ function updateCountdown() {
     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    document.getElementById("countdown").innerHTML =
+    countdownElement.innerHTML =
         `${days}d ${hours}h ${minutes}m ${seconds}s`;
 }
 
